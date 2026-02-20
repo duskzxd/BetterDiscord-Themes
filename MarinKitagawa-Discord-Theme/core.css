@@ -1,100 +1,140 @@
-/* =====================================================
-   Marin Kitagawa Theme Core
-   Made by Duskz
-   ===================================================== */
+/**
+ * Marin Kitagawa Theme Core
+ * Made by Duskz
+ * Standalone Version — No Imports Needed
+ */
 
 :root{
-     --background: url('https://images.alphacoders.com/132/1320795.png');
+     --background: url("https://images.alphacoders.com/132/1320795.png");
 
-     --activetext-colour: #ffffff;
+     --text-color: #ffffff;
 
-     /* Marin Hair Inspired */
-     --primary1-colour: #ff6fae;
-     --primary2-colour: rgba(255,111,174,0.6);
-     --primary3-colour: rgba(200,70,140,0.55);
-     --primary4-colour: rgba(200,70,140,0.25);
+     /* Marin Hair Colors */
+     --primary1: #ff6fb1;
+     --primary2: #ff8fc7;
+     --primary3: rgba(255,111,177,0.45);
+     --primary4: rgba(255,111,177,0.15);
 
-     /* Soft Dark Glass */
-     --secondary1-colour: rgba(30,30,40,0.35);
-     --secondary2-colour: rgba(45,45,60,0.55);
-     --secondary3-colour: rgba(15,15,25,0.75);
-     --secondary4-colour: rgba(15,15,25,0.4);
+     /* Dark Glass */
+     --dark1: rgba(18,18,28,0.85);
+     --dark2: rgba(30,30,44,0.75);
+     --dark3: rgba(45,45,65,0.55);
 }
 
-/* ===== Background ===== */
-#app-mount {
-    background: var(--background);
-    background-position: center;
-    background-size: cover;
+/* ================= BACKGROUND ================= */
+
+.appMount-2yBXZl,
+.bg-1QIAus {
+     background: var(--background) center/cover no-repeat fixed !important;
 }
 
-/* ===== Transparency ===== */
+/* ================= TRANSPARENCY ================= */
+
 .theme-dark,
-.container__133bf,
-.chatContent_f75fb0,
-.members_c8ffbb {
-    background: transparent !important;
+.container-1eFtFS,
+.chat-2ZfjoI,
+.members-3WRCEx,
+.container-ZMc96U {
+     background: transparent !important;
 }
 
-/* ===== Glass Panels ===== */
-.sidebar__5e434,
-.container__2637a,
-.chat_f75fb0 {
-    background: var(--secondary3-colour) !important;
-    backdrop-filter: blur(12px);
+/* ================= GLASS PANELS ================= */
+
+.sidebar-1tnWFu,
+.chatContent-3KubbW,
+.membersWrap-3NUR2t,
+.container-2cd8Mz {
+     background: var(--dark1) !important;
+     backdrop-filter: blur(14px);
+     border-radius: 12px;
 }
 
-/* ===== Top Bar ===== */
-.title_c38106 {
-    background: var(--secondary3-colour);
-    border-bottom: 3px solid var(--primary3-colour);
+/* ================= TITLE BAR ================= */
+
+.title-31SJ6t {
+     background: var(--dark2) !important;
+     border-bottom: 2px solid var(--primary3);
 }
 
-.title_c38106::before {
-    content: "Marin Kitagawa Theme — By Duskz";
-    color: rgba(255,255,255,0.6);
-    margin-right: 10px;
+.title-31SJ6t::before {
+     content: "Marin Kitagawa Theme — by Duskz";
+     color: var(--primary2);
+     margin-right: 10px;
 }
 
-/* ===== Links ===== */
+/* ================= BUTTONS ================= */
+
+button,
+.lookFilled-1Gx00P {
+     background: var(--primary1) !important;
+     border-radius: 8px !important;
+     transition: 0.2s ease;
+}
+
+button:hover,
+.lookFilled-1Gx00P:hover {
+     background: var(--primary2) !important;
+     box-shadow: 0 0 14px var(--primary3);
+}
+
+/* ================= LINKS ================= */
+
 a,
-.anchor_edefb8 {
-    color: var(--primary1-colour);
+.anchor-1MIwyf {
+     color: var(--primary2) !important;
 }
 
-/* ===== Buttons ===== */
-.lookFilled__201d5,
-.button_a22cb0.primary_a22cb0 {
-    background-color: var(--primary1-colour)!important;
-    color: white;
-    border-radius: 8px;
+/* ================= MESSAGE STYLE ================= */
+
+.message-2CShn3 {
+     background: var(--dark3);
+     border-radius: 10px;
+     padding: 6px 10px;
+     margin-top: 4px;
+     transition: 0.15s ease;
 }
 
-.lookFilled__201d5:hover {
-    background-color: var(--primary2-colour)!important;
+.message-2CShn3:hover {
+     background: var(--primary4);
 }
 
-/* ===== Messages ===== */
-.message__5126c .contents_c19a55 {
-    background: var(--secondary1-colour);
-    border-radius: 10px;
-    padding: 6px 12px;
+/* ================= CHANNEL HOVER ================= */
+
+.containerDefault-YUSmu3:hover {
+     background: var(--primary4);
+     border-radius: 8px;
 }
 
-/* ===== Mentions ===== */
-.mention {
-    background: var(--primary4-colour);
-    color: #fff;
+/* ================= MEMBER LIST ================= */
+
+.member-2gU6Ar:hover {
+     background: var(--primary4);
+     border-radius: 8px;
 }
 
-/* ===== Scrollbar ===== */
+/* ================= INPUT ================= */
+
+.form-3gdLxP {
+     background: var(--dark2);
+     backdrop-filter: blur(14px);
+     border-radius: 14px;
+}
+
+/* ================= SCROLLBAR ================= */
+
+::-webkit-scrollbar {
+     width: 6px;
+}
+
 ::-webkit-scrollbar-thumb {
-    background: var(--primary2-colour);
-    border-radius: 10px;
+     background: var(--primary3);
+     border-radius: 10px;
 }
 
-/* ===== Hover Glow ===== */
-button:hover {
-    box-shadow: 0 0 12px var(--primary2-colour);
-    transition: 0.2s ease;
+/* ================= SMALL GLOW ================= */
+
+.icon-2xnN2Y:hover,
+.actionButton-3-B2x-:hover {
+     color: var(--primary2);
+     filter: drop-shadow(0 0 6px var(--primary2));
 }
