@@ -5,4 +5,5 @@
  * @description Marin Kitagawa aesthetic theme inspired by My Dress-Up Darling
  */
 
-@import url('https://raw.githubusercontent.com/duskzxd/MarinKitagawa-Discord-Theme/main/core.css');
+/* Load Theme Core */
+@import url('https://raw.githubusercontent.com/duskzxd/BetterDiscord-Themes/main/MarinKitagawa-Discord-Theme/core.css');
