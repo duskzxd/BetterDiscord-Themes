@@ -1,0 +1,100 @@
+/* =====================================================
+   Marin Kitagawa Theme Core
+   Made by Duskz
+   ===================================================== */
+
+:root{
+     --background: url('https://images.alphacoders.com/132/1320795.png');
+
+     --activetext-colour: #ffffff;
+
+     /* Marin Hair Inspired */
+     --primary1-colour: #ff6fae;
+     --primary2-colour: rgba(255,111,174,0.6);
+     --primary3-colour: rgba(200,70,140,0.55);
+     --primary4-colour: rgba(200,70,140,0.25);
+
+     /* Soft Dark Glass */
+     --secondary1-colour: rgba(30,30,40,0.35);
+     --secondary2-colour: rgba(45,45,60,0.55);
+     --secondary3-colour: rgba(15,15,25,0.75);
+     --secondary4-colour: rgba(15,15,25,0.4);
+}
+
+/* ===== Background ===== */
+#app-mount {
+    background: var(--background);
+    background-position: center;
+    background-size: cover;
+}
+
+/* ===== Transparency ===== */
+.theme-dark,
+.container__133bf,
+.chatContent_f75fb0,
+.members_c8ffbb {
+    background: transparent !important;
+}
+
+/* ===== Glass Panels ===== */
+.sidebar__5e434,
+.container__2637a,
+.chat_f75fb0 {
+    background: var(--secondary3-colour) !important;
+    backdrop-filter: blur(12px);
+}
+
+/* ===== Top Bar ===== */
+.title_c38106 {
+    background: var(--secondary3-colour);
+    border-bottom: 3px solid var(--primary3-colour);
+}
+
+.title_c38106::before {
+    content: "Marin Kitagawa Theme — By Duskz";
+    color: rgba(255,255,255,0.6);
+    margin-right: 10px;
+}
+
+/* ===== Links ===== */
+a,
+.anchor_edefb8 {
+    color: var(--primary1-colour);
+}
+
+/* ===== Buttons ===== */
+.lookFilled__201d5,
+.button_a22cb0.primary_a22cb0 {
+    background-color: var(--primary1-colour)!important;
+    color: white;
+    border-radius: 8px;
+}
+
+.lookFilled__201d5:hover {
+    background-color: var(--primary2-colour)!important;
+}
+
+/* ===== Messages ===== */
+.message__5126c .contents_c19a55 {
+    background: var(--secondary1-colour);
+    border-radius: 10px;
+    padding: 6px 12px;
+}
+
+/* ===== Mentions ===== */
+.mention {
+    background: var(--primary4-colour);
+    color: #fff;
+}
+
+/* ===== Scrollbar ===== */
+::-webkit-scrollbar-thumb {
+    background: var(--primary2-colour);
+    border-radius: 10px;
+}
+
+/* ===== Hover Glow ===== */
+button:hover {
+    box-shadow: 0 0 12px var(--primary2-colour);
+    transition: 0.2s ease;
+}
